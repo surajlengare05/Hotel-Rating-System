@@ -40,10 +40,23 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "last_directory_selection": "C:/Users/lenga/IdeaProjects/Hotel_Rating_System  ( MicroServices )/User_Microservice/User_Microservice/src/main/java/com/hotelRatingSysteam",
-    "last_opened_file_path": "C:/Users/lenga/IdeaProjects/Hotel_Rating_System  ( MicroServices )/User_Microservice/User_Microservice"
+    "last_opened_file_path": "C:/Users/lenga/IdeaProjects/Student_Library_Management_System/Student_Library_Management_System"
   }
 }]]></component>
   <component name="RunManager" selected="Application.ServiceRegistryApplication">
+    <configuration name="ApiGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hotelRatingSysteam.ApiGateway.ApiGatewayApplication" />
+      <module name="ApiGateway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hotelRatingSysteam.ApiGateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HotelMicroserviceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.hotelRatingSysteam.Hotel_Microservice.HotelMicroserviceApplication" />
       <module name="Hotel_Microservice" />
@@ -98,10 +111,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.UserMicroserviceApplication" />
         <item itemvalue="Application.RatingMicroserviceApplication" />
-        <item itemvalue="Application.HotelMicroserviceApplication" />
         <item itemvalue="Application.ServiceRegistryApplication" />
+        <item itemvalue="Application.HotelMicroserviceApplication" />
+        <item itemvalue="Application.UserMicroserviceApplication" />
+        <item itemvalue="Application.ApiGatewayApplication" />
       </list>
     </recent_temporary>
   </component>
