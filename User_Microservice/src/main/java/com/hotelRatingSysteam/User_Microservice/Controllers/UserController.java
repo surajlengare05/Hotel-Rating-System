@@ -13,6 +13,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -32,20 +33,19 @@ public class UserController
         return new ResponseEntity<>(result, HttpStatus.CREATED);
     }
 
-    //int retryCount = 1;
+   // int retryCount = 1;
 
     @GetMapping("/getUserById")
    // @CircuitBreaker(name = "ratingHotelBreaker", fallbackMethod = "ratingHotelFallback")
    // @Retry(name = "ratingHotelRetry", fallbackMethod = "ratingHotelFallback")
-    @RateLimiter(name = "userRateLimiter", fallbackMethod = "ratingHotelFallback")
+   // @RateLimiter(name = "userRateLimiter", fallbackMethod = "ratingHotelFallback")
     public ResponseEntity<User> getUserById(@RequestParam("userId") int id)
     {
-        //logger.info("Retry count: {}", retryCount);
-        //retryCount++;
+       // logger.info("Retry count: {}", retryCount);
+       // retryCount++;
        User user = userService.getUserById(id);
        return new ResponseEntity<>(user, HttpStatus.OK);
     }
-
     public ResponseEntity<User> ratingHotelFallback(int id, Exception ex)
     {
         logger.info("Fallback method (ratingHotelFallback) is called since some service is down :" + ex.getMessage());
@@ -59,11 +59,21 @@ public class UserController
         return new ResponseEntity<>(user, HttpStatus.OK);
     }
 
+   // int newRetryCount = 1;
 
+   // @CircuitBreaker(name = "ratingHotelBreaker", fallbackMethod = "ratingFallback")
+   // @Retry(name = "ratingRetry", fallbackMethod = "ratingFallback")
     @GetMapping("/getAllUsers")
     public ResponseEntity<List<User>> getAllUsers()
     {
+       // logger.info("Retry count new: {}", newRetryCount);
+       // newRetryCount++;
         List<User> userList = userService.getAllUsers();
         return new ResponseEntity<>(userList, HttpStatus.OK);
+    }
+    public ResponseEntity<List<User>> ratingFallback(Exception ex)
+    {
+        List<User> emptyList = new ArrayList<>();
+        return new ResponseEntity<>(emptyList, HttpStatus.OK);
     }
 }

@@ -49,14 +49,18 @@ resilience4j:
         automaticTransitionFromOpenToHalfOpenEnabled: true
         waitDurationInOpenState: 6s
         permittedNumberOfCallsInHalfOpenState: 3
-        slidingWindowSize: 12
+        slidingWindowSize: 12             # considers last 12 calls only for calculating failure rate
         slidingWindowType: COUNT_BASED
 
   retry:
     instances:
       ratingHotelRetry:
-        max attempts: 3
-        wait-duration: 3s
+        max attempts: 5
+        wait-duration: 5s
+      ratingRetry:
+        max attempts: 2
+        wait-duration: 10s
+
 
   rate-limiter:
     instances:

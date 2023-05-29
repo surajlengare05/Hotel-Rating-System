@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="944ce307-4859-49df-b03f-77b5be5b7552" name="Changes" comment="" />
+    <list default="true" id="944ce307-4859-49df-b03f-77b5be5b7552" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Hotel_Microservice/src/main/java/com/hotelRatingSysteam/Hotel_Microservice/Config/OurConfigurations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hotel_Microservice/src/main/java/com/hotelRatingSysteam/Hotel_Microservice/External_Servicess/RatingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hotel_Microservice/src/main/java/com/hotelRatingSysteam/Hotel_Microservice/Model/Rating.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Rating_Microservice/src/main/java/com/hotelRatingSysteam/Rating_Microservice/Config/OurConfigurations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel_Microservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel_Microservice/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel_Microservice/src/main/java/com/hotelRatingSysteam/Hotel_Microservice/Controllers/HotelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel_Microservice/src/main/java/com/hotelRatingSysteam/Hotel_Microservice/Controllers/HotelController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel_Microservice/src/main/java/com/hotelRatingSysteam/Hotel_Microservice/HotelMicroserviceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel_Microservice/src/main/java/com/hotelRatingSysteam/Hotel_Microservice/HotelMicroserviceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel_Microservice/src/main/java/com/hotelRatingSysteam/Hotel_Microservice/Model/Hotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel_Microservice/src/main/java/com/hotelRatingSysteam/Hotel_Microservice/Model/Hotel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel_Microservice/src/main/java/com/hotelRatingSysteam/Hotel_Microservice/Repositories/HotelRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel_Microservice/src/main/java/com/hotelRatingSysteam/Hotel_Microservice/Repositories/HotelRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel_Microservice/src/main/java/com/hotelRatingSysteam/Hotel_Microservice/Services/HotelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel_Microservice/src/main/java/com/hotelRatingSysteam/Hotel_Microservice/Services/HotelService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rating_Microservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Rating_Microservice/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rating_Microservice/src/main/java/com/hotelRatingSysteam/Rating_Microservice/Controllers/RatingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Rating_Microservice/src/main/java/com/hotelRatingSysteam/Rating_Microservice/Controllers/RatingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rating_Microservice/src/main/java/com/hotelRatingSysteam/Rating_Microservice/Repositories/RatingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Rating_Microservice/src/main/java/com/hotelRatingSysteam/Rating_Microservice/Repositories/RatingRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rating_Microservice/src/main/java/com/hotelRatingSysteam/Rating_Microservice/Services/RatingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Rating_Microservice/src/main/java/com/hotelRatingSysteam/Rating_Microservice/Services/RatingService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,10 +29,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -31,6 +49,7 @@
     </option>
   </component>
   <component name="ProjectId" id="2PanT5wz8Dp3BqgQD9SWojHBYNR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -43,7 +62,7 @@
     "last_opened_file_path": "C:/Users/lenga/IdeaProjects/Student_Library_Management_System/Student_Library_Management_System"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.ServiceRegistryApplication">
+  <component name="RunManager" selected="Application.RatingMicroserviceApplication">
     <configuration name="ApiGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.hotelRatingSysteam.ApiGateway.ApiGatewayApplication" />
       <module name="ApiGateway" />
@@ -112,9 +131,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.RatingMicroserviceApplication" />
-        <item itemvalue="Application.ServiceRegistryApplication" />
         <item itemvalue="Application.HotelMicroserviceApplication" />
         <item itemvalue="Application.UserMicroserviceApplication" />
+        <item itemvalue="Application.ServiceRegistryApplication" />
         <item itemvalue="Application.ApiGatewayApplication" />
       </list>
     </recent_temporary>

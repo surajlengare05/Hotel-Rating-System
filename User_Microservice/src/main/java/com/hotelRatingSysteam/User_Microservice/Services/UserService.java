@@ -71,6 +71,12 @@ public class UserService
     public List<User> getAllUsers()
     {
         List<User> usersList = userRepository.findAll();
+        for (User user : usersList)
+        {
+            Rating[] ratingArray = restTemplate.getForObject("http://RATING-MICROSERVICE/rating/getRatingsGivenByUser?userId=" + user.getId(), Rating[].class);
+            List<Rating> ratingList =  Arrays.asList(ratingArray);
+            user.setRatingsGiven(ratingList);
+        }
         return usersList;
     }
 }

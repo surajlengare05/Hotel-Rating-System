@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/rating")
@@ -49,5 +50,19 @@ public class RatingController
     {
         Rating rating = ratingService.getRatingById(id);
         return new ResponseEntity<>(rating, HttpStatus.OK);
+    }
+
+    @GetMapping("/getAvgRatingOfHotel")
+    public ResponseEntity<Double >getAvgRatingOfHotel(@RequestParam("hotelId") int hotelId)
+    {
+        double avg = ratingService.getAvgRatingOfHotel(hotelId);
+        return new ResponseEntity<>(avg, HttpStatus.OK);
+    }
+
+    @GetMapping("/getAvgRatingsOfAllHotels")
+    public ResponseEntity<Map<String, Double>> getAvgRatingsOfAllHotels()
+    {
+        Map<String, Double> arr = ratingService.getAvgRatingsOfAllHotels();
+        return new ResponseEntity<>(arr, HttpStatus.OK);
     }
 }

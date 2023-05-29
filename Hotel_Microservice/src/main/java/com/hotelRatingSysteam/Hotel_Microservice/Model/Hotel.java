@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Data
 @NoArgsConstructor
@@ -25,5 +26,8 @@ public class Hotel
 
     @Enumerated(value = EnumType.STRING)
     private HotelType hotelType;
+
+    @Transient
+    private List<Rating> ratings;
 
 }

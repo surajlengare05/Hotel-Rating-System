@@ -36,4 +36,32 @@ public class HotelController
         List<Hotel> hotelList = hotelService.getAllHotels();
         return new ResponseEntity<>(hotelList, HttpStatus.OK);
     }
+
+    @GetMapping("/getAllVegHotels")
+    public ResponseEntity<List<Hotel>> getAllVegHotels()
+    {
+        List<Hotel> hotelList = hotelService.getAllVegHotels();
+        return new ResponseEntity<>(hotelList, HttpStatus.OK);
+    }
+
+    @GetMapping("/getAllNonVegHotels")
+    public ResponseEntity<List<Hotel>> getAllNonVegHotels()
+    {
+        List<Hotel> hotelList = hotelService.getAllNonVegHotels();
+        return new ResponseEntity<>(hotelList, HttpStatus.OK);
+    }
+
+    @GetMapping("/getHotelsInArea")
+    public ResponseEntity<List<Hotel>> getHotelsInArea(@RequestParam("area") String area)
+    {
+        List<Hotel> hotelList = hotelService.getHotelsInArea(area);
+        return new ResponseEntity<>(hotelList, HttpStatus.OK);
+    }
+
+    @GetMapping("/getHotelNameById")
+    public ResponseEntity<String> getHotelNameById(@RequestParam("hotelId") int id)
+    {
+        String name = hotelService.getHotelNameById(id);
+        return new ResponseEntity<>(name, HttpStatus.OK);
+    }
 }
